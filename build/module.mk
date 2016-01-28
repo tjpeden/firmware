@@ -226,7 +226,7 @@ $(BUILD_PATH)/%.o : $(SOURCE_PATH)/%.rs
 	$(call echo,'Building file: $<')
 	$(call echo,'Invoking: Rust Compiler')
 	$(VERBOSE)$(MKDIR) $(dir $@)
-	$(VERBOSE)$(RUSTC) $(RUSTFLAGS) --emit obj -o $@ $<
+	$(VERBOSE)$(RUSTC) $(RUSTTARGET) -- $(RUSTFLAGS)
 	$(call echo,)
 
 
@@ -255,5 +255,3 @@ include $(COMMON_BUILD)/recurse.mk
 ifneq ("MAKECMDGOALS","clean")
 -include $(ALLDEPS)
 endif
-
-

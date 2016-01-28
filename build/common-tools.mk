@@ -11,7 +11,7 @@ MKDIR = mkdir -p
 CC = $(GCC_ARM_PATH)$(GCC_PREFIX)gcc
 CPP = $(GCC_ARM_PATH)$(GCC_PREFIX)g++
 AR = $(GCC_ARM_PATH)$(GCC_PREFIX)ar
-RUSTC = rustc
+RUSTC = cargo rustc
 OBJCOPY = $(GCC_ARM_PATH)$(GCC_PREFIX)objcopy
 OBJDUMP = $(GCC_ARM_PATH)$(GCC_PREFIX)objdump
 SIZE = $(GCC_ARM_PATH)$(GCC_PREFIX)size
@@ -22,4 +22,3 @@ CRC = crc32
 XXD = xxd
 
 CPPFLAGS +=
-
