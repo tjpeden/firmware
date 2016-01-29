@@ -1,0 +1,10 @@
+[package]
+name = "application"
+version = "0.1.0"
+authors = ["TJ Peden <tj@tjcoding.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "1.0.0"
